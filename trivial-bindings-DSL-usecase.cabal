@@ -1,0 +1,22 @@
+cabal-version: >= 1.2.3
+name: trivial-bindings-DSL-usecase
+synopsis:
+  Using bindings-DSL most trivially (just for barrier breaking or corner casing)
+version: 0.0.0
+license: BSD3
+license-file: LICENSE
+maintainer: none yet
+author: Daniel Kahlenberg
+build-type: Simple
+bug-reports:
+category: FFI
+library
+  hs-source-dirs: src
+  extensions:
+    ForeignFunctionInterface
+  build-depends:
+    base >=3 && <5,
+    bindings-DSL >=1.0.7 && <1.1
+  exposed-modules:
+    MyLib.TrivialCaseFFI
+  c-sources: src/examplenonapi.c
