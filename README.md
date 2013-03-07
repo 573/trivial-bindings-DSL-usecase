@@ -2,6 +2,8 @@
 title: How to use bindings-DSL for ffi
 ---
 
+[travis-ci.org](http://travis-ci.org) results: [![Build
+Status](https://secure.travis-ci.org/573/trivial-bindings-DSL-usecase.png?branch=master)](http://travis-ci.org/573/trivial-bindings-DSL-usecase)
 
 The file `src/examplenonapi.c` defines only one very trivial method: Build and
 return the quadratic number of an input number. This method can be used
@@ -18,4 +20,4 @@ Only practically meaning you can type in a `ghci` session:
 
 and will get `4`.
 
-vim:filetype=mkd
+{% comment %} vim: set filetype=markdown fileencoding=utf-8: {% endcomment %}
